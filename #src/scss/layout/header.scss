@@ -1,0 +1,28 @@
+.l-header {
+  display: flex;
+  justify-content: center;
+  background: #000;
+
+  &__logo {
+    margin: 18px 0;
+  }
+
+  &__nav {
+    margin: auto 0 auto auto;
+
+    &-item {
+      @include text(Raleway, 600, 14px, 27px, #fff) {
+        text-decoration: none;
+      }
+      padding: 4px 0;
+
+      &:not(:first-child) {
+        margin-left: 22px;
+      }
+
+      &:hover {
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+}

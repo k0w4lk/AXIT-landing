@@ -1,0 +1,63 @@
+.l-social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px -1px 13px rgba(0, 0, 0, 0.25);
+  position: relative;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin: 18px auto 18px 0;
+    max-width: 390px;
+  }
+
+  &__heading {
+    @include text(Raleway, 700, 20px, 24px, #333);
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    @include text(Raleway, 400, 14px, 20px, #86878b);
+  }
+
+  &__links {
+    margin: auto 0;
+  }
+
+  &__link {
+    background: url(../../images/social_sprite_40x40.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    &_facebook {
+      background-position: -32px -32px;
+    }
+
+    &_gplus {
+      background-position: -136px -32px;
+    }
+
+    &_twitter {
+      background-position: -240px -32px;
+    }
+
+    &_instagram {
+      background-position: -344px -32px;
+    }
+
+    &_linkedin {
+      background-position: -448px -32px;
+    }
+
+    &_pinterest {
+      background-position: -552px -32px;
+    }
+  }
+}

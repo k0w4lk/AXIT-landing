@@ -1,0 +1,79 @@
+.l-pricing {
+  display: flex;
+  justify-content: center;
+  background: #f5f5f5;
+
+  &__flexwrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 110px;
+  }
+
+  &__heading {
+    margin-top: 0;
+    &::after {
+      @include line(#ff8b38);
+    }
+  }
+
+  &__options {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px;
+    align-items: flex-end;
+  }
+
+  &__option {
+    max-width: 342px;
+    width: 100%;
+
+    &-name {
+      @include text(Raleway, 700, 20px, 24px, #fff);
+      padding: 18px;
+      text-align: center;
+      background: #333;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    &-cost {
+      @include text(Raleway, 700, 32px, 32px, #fff);
+      padding: 38px;
+      text-align: center;
+      background: #333;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    &-description {
+      @include text(Raleway, 100, 14px, 24px, #fff) {
+        font-style: italic;
+      }
+      padding: 14px;
+      text-align: center;
+      background: #333;
+    }
+
+    &-popularity {
+      @include text(Raleway, 700, 14px, 24px, #fff);
+      padding: 8px 0;
+      text-align: center;
+      background: #ff8b38;
+
+      &:empty {
+        padding: 0;
+        height: 5px;
+      }
+    }
+
+    &-feature {
+      @include text(Raleway, 400, 14px, 24px, #86878b);
+      padding: 8px 0;
+      text-align: center;
+      background: #fff;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #f5f5f5;
+      }
+    }
+  }
+}

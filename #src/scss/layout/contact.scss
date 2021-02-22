@@ -1,0 +1,74 @@
+.l-contact {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+
+  &__flexwrapper {
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0 100px;
+  }
+
+  &__heading {
+    margin-top: 0;
+    &::after {
+      @include line(#ff8b38);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    width: 100%;
+
+    &-data {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-user-info {
+      display: flex;
+      flex-direction: column;
+      max-width: 530px;
+      width: 100%;
+
+      &-item {
+        @include text(Raleway, 400, 14px, 16px, #333);
+        display: inline-block;
+        width: 100%;
+        padding: 7px 12px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #dfdfdf;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+
+        &:focus {
+          border-bottom-color: #333;
+        }
+      }
+    }
+
+    &-message {
+      @include text(Raleway, 400, 14px, 16px, #333);
+      max-width: 500px;
+      width: 100%;
+      padding: 7px 12px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #dfdfdf;
+      resize: none;
+
+      &:focus {
+        border-bottom-color: #333;
+      }
+    }
+  }
+
+  &__button-wrapper {
+    margin: 46px auto 0;
+  }
+}

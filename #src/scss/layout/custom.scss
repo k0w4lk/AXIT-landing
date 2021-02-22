@@ -1,0 +1,28 @@
+.l-custom {
+  display: flex;
+  justify-content: center;
+  padding: 54px 0;
+  background: linear-gradient(
+      to right,
+      rgba(51, 51, 51, 0.58) 0%,
+      rgba(51, 51, 51, 0.58) 100%
+    ),
+    url('../../images/architecture3.png') no-repeat;
+  background-size: cover;
+
+  &__flexwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-top: 0;
+    &::after {
+      @include line(#fff);
+    }
+  }
+
+  &__button-container {
+    margin-top: 38px;
+  }
+}

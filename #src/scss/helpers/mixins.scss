@@ -1,0 +1,31 @@
+@mixin text($font-family, $font-weight, $font-size, $line-height, $color) {
+  font: {
+    family: $font-family;
+    weight: $font-weight;
+    size: $font-size;
+  }
+  line-height: $line-height;
+  color: $color;
+  @content;
+}
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    src: url('../../fonts/#{$file_name}.ttf');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@mixin line($background-color) {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $background-color;
+}

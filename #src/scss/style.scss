@@ -1,0 +1,29 @@
+@import './vendors/normalize.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import './helpers/mixins.scss';
+
+@import './components/button.scss';
+@import './components/flexwrapper.scss';
+@import './components/text.scss';
+@import './components/block-tagline.scss';
+
+@import './fonts/fonts.scss';
+
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/social.scss';
+@import './layout/features.scss';
+@import './layout/process.scss';
+@import './layout/pricing.scss';
+@import './layout/testimonials.scss';
+@import './layout/custom.scss';
+@import './layout/contact.scss';
+@import './layout/footer.scss';

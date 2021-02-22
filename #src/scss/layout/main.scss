@@ -1,0 +1,104 @@
+.l-main {
+  background: url(../../images/architecture1.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__info {
+    max-width: 550px;
+    padding-right: 8px;
+    margin: 100px 0 140px;
+  }
+
+  &__logo {
+    width: 175px;
+    height: 60px;
+  }
+
+  &__heading {
+    @include text(Raleway, 400, 36px, 42px, #fff);
+    margin: 30px 0 66px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 100px;
+      height: 2px;
+      background: #fff;
+    }
+  }
+
+  &__text {
+    max-width: 90%;
+  }
+
+  &__button {
+    margin: 42px 0 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+    margin: auto 0 auto auto;
+
+    &-heading {
+      @include text(Raleway, 700, 20px, 28px, #333);
+      background-color: #dfdfdf;
+      padding: 16px 0;
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+
+      &_accent {
+        color: #ff8b38;
+      }
+    }
+
+    &-inputs {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 38px 0 56px;
+
+      &-item {
+        @include text(Raleway, 400, 14px, 16px, #bdbdbd);
+        width: 77%;
+        border: none;
+        padding: 6px 12px;
+        outline: none;
+        border-bottom: 1px solid #dfdfdf;
+
+        &:not(:first-child) {
+          margin-top: 38px;
+        }
+
+        &:focus {
+          border-bottom-color: #333;
+        }
+      }
+    }
+
+    &-button {
+      @include text(Raleway, 600, 15px, 18px, #fff);
+      background-color: #ff9b51;
+      padding: 18px 0;
+      border: none;
+      outline: none;
+      border-radius: 0 0 5px 5px;
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover,
+      &:focus {
+        font-size: 18px;
+        background-color: #ee8331;
+      }
+    }
+  }
+}
