@@ -1,1 +1,1 @@
-<h1><a>One-page site landing</a></h1>
+<h1><a>Layout of a one-page site</a></h1>
